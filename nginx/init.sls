@@ -23,12 +23,6 @@ nginx:
     - group: root
     - mode: 640
 
-/etc/nginx/nginx.conf:
-  file.symlink:
-    - target: /etc/nginx/nginx.conf
-    - require:
-      - file: /etc/nginx/nginx.conf
-
 /etc/nginx/sites-available/default:
   file.managed:
     - source: salt://nginx/files/default.jinja
