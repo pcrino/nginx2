@@ -26,5 +26,5 @@ Removed an unnecessary smylink on the nginx.conf
 
 Removed file watches under service.running as they seemed unnecessary and were causing errors
 
-Script runs without errors now
+Script runs without errors now but it doesn't appear to be running nginx on port 3200
 
