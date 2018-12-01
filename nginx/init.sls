@@ -13,8 +13,6 @@ nginx:
     - enable: True
     - watch:
       - pkg: nginx
-      - file: /etc/nginx/nginx.conf
-      - file: /etc/nginx/sites-available/default
 
 /etc/nginx/nginx.conf:
   file.managed:
